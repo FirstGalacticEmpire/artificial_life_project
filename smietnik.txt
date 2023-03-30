@@ -1,0 +1,22 @@
+vector<int> permutateList(vector<int> list_to_permutate) {
+
+    auto vector_len = list_to_permutate.size();
+
+    for (auto i = vector_len; i > 0; i--) {
+        int rand_val = rand() % i;
+//        cout<<rand_val<<endl;
+//        cout<<i<<endl;
+//        cout<<endl;
+        swap(list_to_permutate[i - 1], list_to_permutate[rand_val]);
+//        list_to_permutate[i] = list_to_permutate[rand_val]
+//        cout << rand_val << "\n";
+    }
+//    for (auto i: list_to_permutate)
+//        std::cout << i << ' ';
+
+
+//    cout << rand_val;
+
+
+    return list_to_permutate;
+}
